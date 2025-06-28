@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Document</title>
-</head>
-<body>
-  <h1>hello world</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather-Web</h1>
+    </header>
+    <main>
+      <form id="weather-form" action="">
+        <div class="input-container">
+          <img src="./assets/search-icon.svg" alt="search" class="input-icon" />
+          <input type="text" id="city-input" placeholder="Search location..." />
+        </div>
+        <button
+          type="submit"
+          aria-label="search"
+          style="display: none"
+        ></button>
+      </form>
+      <div class="card">
+        <div class="location-container">
+          <p id="location"></p>
+          <img
+            class="location-icon"
+            src="assets/location-icon.svg"
+            alt="location-icon"
+          />
+        </div>
+        <div class="temp-container">
+          <img src="assets/icon _temperature_.svg" alt="temperature-icon" />
+          <p id="temperature"></p>
+          <img
+            src="assets/weather-ilogoRB.png"
+            id="temperature-icon"
+            alt="temperature-icon"
+          />
+          <!-- insert img from js -->
+        </div>
+        <p id="my-date">Aug 23, Tue</p>
+        <div class="details-container">
+          <div class="air-container">
+            <p class="title">CONDITION</p>
+            <p id="condition"></p>
+          </div>
+          <div class="humidity-container">
+            <p class="title">HUMIDITY</p>
+            <p id="humidity"></p>
+          </div>
+          <div class="visibility-container">
+            <p class="title">VISIBILITY</p>
+            <p id="visibility"></p>
+          </div>
+
+          <div class="wind-container">
+            <p class="title">WIND</p>
+            <p id="wind"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
